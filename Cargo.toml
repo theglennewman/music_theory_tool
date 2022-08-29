@@ -1,0 +1,12 @@
+[package]
+name = "music_theory_tool"
+authors = ["Glen Newman"]
+version = "0.0.0"
+edition = "2021"
+license = "MIT"
+license-file = "LICENSE.txt"
+readme = "README.md"
+description = """
+A tool for music theory.
+"""
+[dependencies]
