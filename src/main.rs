@@ -5,7 +5,7 @@
 mod note;
 
 fn main() {
-    println!("music_theory_tool\n");
+    println!("music_theory_tool!\n");
     println!("[main.rs main()]");
     note::debug_note();
 }
