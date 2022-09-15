@@ -1,10 +1,14 @@
 
+// include note.rs + interval.rs as modules here
+// ... I *think* this means, take the .rs file and include the module in-line here?
 mod note;
+mod interval;
 
 fn main() {
     println!("\nmusic_theory_tool!\n");
     println!("[START main.rs main()]");
-    note::debug_note();
+
+    interval::debug_interval();
 
     println!("[DONE  main.rs main()]");
 }

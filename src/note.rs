@@ -11,6 +11,10 @@
 
 use std::fmt;
 
+// import our interval module (interval.rs)
+// ... I *think* the 'crate' part of this means "use interval from the crate we're in"
+use crate::interval;
+
 // Natural represents a natural note, or a white key on a piano.
 #[derive(Copy, Clone, PartialEq, Eq)]
 struct Natural {
@@ -229,6 +233,33 @@ impl fmt::Display for Note {
     fn fmt (&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}{}", self.nat, self.acc)
     }
+}
+
+// intervals start with a generic interval
+// then you determine the specific number of half steps to go up and down
+// examples:
+// * major second = two half steps
+//      C-D since it's a generic second on staff and two half steps on the keyboard
+//      E-F#
+// * major third = four half steps
+//      C-E
+//      E-G#
+// * perfect fourth = five half steps
+//      C-F
+//      F-Bb
+// * perfect fifth = seven half steps
+//      C-G
+//      B-F#
+// * major sixth = nine half steps
+//      C-A
+//      Eb-C
+// * major seventh = eleven half steps
+//      C-B
+//      D-C#
+// * perfect eighth (or perfect octave) = twelve half steps
+//      C-C
+struct Interval {
+
 }
 
 // TODO: next part is tricky...
