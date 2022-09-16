@@ -8,6 +8,7 @@ fn main() {
     println!("\nmusic_theory_tool!\n");
     println!("[START main.rs main()]");
 
+    //note::debug_note();
     interval::debug_interval();
 
     println!("[DONE  main.rs main()]");
